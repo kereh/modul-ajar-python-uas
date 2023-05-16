@@ -70,9 +70,11 @@ const index: NextPage<Props> = ({ content, data, mdxSource }) => {
         >
           kembali
         </span>
-        <div>
-          <MDXRemote {...mdxSource} components={components} className="prose" />
-        </div>
+        <div className="px-4 prose">
+          <div>
+           <MDXRemote {...mdxSource} components={components}/>
+          </div>
+         </div>
       </div>
     </div>
   );
